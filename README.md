@@ -1,24 +1,23 @@
-# README
+## Setup Instructions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 1. Clone the repository
 
-Things you may want to cover:
+Clone the repository to your local machine using Git:
 
-* Ruby version
+````bash
+git clone https://github.com/your-username/chat-app.git
+cd chat-app
 
-* System dependencies
+```bash
+bundle install
 
-* Configuration
+```bash
+yarn install
 
-* Database creation
+```bash
+rails db:create
+rails db:migrate
+rails db:seed
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```rails s
+````
