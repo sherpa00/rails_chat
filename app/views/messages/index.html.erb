@@ -1,0 +1,9 @@
+<h1>Chat</h1>
+
+<div id="messages">
+  <%= turbo_stream_from "messages" %>
+  <%= render @messages %>
+</div>
+
+<%= render 'form' %>
+

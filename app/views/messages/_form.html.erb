@@ -1,0 +1,7 @@
+<%= form_with model: @message, url: messages_path, data: { turbo_stream: true } do |f| %>
+  <%= f.label :user_id, "User" %>
+  <%= f.collection_select :user_id, User.all, :id, :username, prompt: "Select a user" %>
+  
+  <%= f.text_field :content, placeholder: "Type your message..." %>
+  <%= f.submit "Send" %>
+<% end %>
